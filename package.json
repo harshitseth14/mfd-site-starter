@@ -1,0 +1,50 @@
+{
+  "name": "mfd-site-starter",
+  "version": "0.1.0",
+  "description": "A website starter for Indian mutual fund distributors and insurance agents: service pages, a two-step lead form that emails you, and the AMFI and IRDAI disclosure lines, on Next.js and Postgres.",
+  "license": "AGPL-3.0-only",
+  "keywords": [
+    "nextjs",
+    "india",
+    "mutual-funds",
+    "amfi",
+    "insurance",
+    "fintech",
+    "template",
+    "starter"
+  ],
+  "scripts": {
+    "dev": "next dev --webpack -p 3200",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "@vercel/functions": "3.11.1",
+    "next": "16.4.6",
+    "nodemailer": "10.3.1",
+    "pg": "8.23.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "0.0.1",
+    "three": "0.186.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/nodemailer": "8.0.2",
+    "@types/pg": "8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "0.186.0",
+    "typescript": "^5",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

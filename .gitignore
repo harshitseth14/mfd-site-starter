@@ -1,0 +1,10 @@
+.next/
+next-env.d.ts
+*.tsbuildinfo
+.env*
+node_modules/
+.neon
+.vercel
+!.env.example
+.DS_Store
+CLAUDE_OSS_APPLICATION.md
